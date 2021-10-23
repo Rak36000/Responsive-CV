@@ -1,0 +1,284 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*-------------Header CSS------------------*/
+#header{
+  height: 100vh;
+
+  background: url(../images/background4.jpg) no-repeat top center;
+background-attachment: fixed;
+background-size: cover cover;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.user-box{
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+.user-box img{
+  border-radius: 50%;
+  width: 250px;
+  border: 2px solid #6cade5;
+
+}
+
+.user-box h1{
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
+.user-box p{
+  color: #fff;
+}
+.scroll-btn{
+  bottom: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  padding: 10px 10px 20px;
+  border-radius: 30px;
+}
+
+.scroll-bar span{
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 10px;
+}
+
+.scroll-bar{
+  animation: mover 1s infinite alterenate;
+}
+
+@keyframes mover {
+  0%{transform: translateY(0);}
+  100%{transform: translateY(10px);}
+}
+
+/*-------------ABOUT CSS------------------*/
+
+.about{
+  padding-top: 100px;
+  margin-bottom: -100px;
+}
+
+.profile-img{
+  height: 400px;
+  float: left;
+}
+
+.nav-bar{
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+.navbar{
+  background-color: #000;
+}
+.navbar-brand{
+  height: 70px;
+  padding-bottom: 2px;
+}
+
+.nav-bar .fa-bars{
+
+  font-size: 35px;
+  color: #fff;
+}
+.nav-link{
+  color: #fff !important;
+}
+.skills-bar{
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.progress{
+  border-radius: 16px !important;
+  margin-bottom: 10px;
+}
+
+.progress-bar{
+  border-radius: 16px  ;
+  background: #000 !important;
+}
+
+/*-------------RESUME CSS------------------*/
+
+.resume{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: #f9f9f9;
+}
+.resume h3{
+  margin-bottom: 50px;
+}
+.timeline{
+  list-style-type: none;
+  position: relative;
+}
+.timeline:before{
+  content: '';
+  background: #666;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  width: 2px;
+  height:100%;
+  z-index:1;
+
+}
+.timeline li{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #fff;
+  padding: 10px;
+}
+
+.timeline li h4{
+  background-color: #000;
+  padding: 5px 0px 5px 20px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.timeline li:before{
+  content: '';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #000;
+  left: 11px;
+  width: 20px;
+  height:20px;
+  z-index:1;
+}
+/*-------------RESUME CSS------------------*/
+.social{
+  top:50%;
+  transform: translateY(-50%);
+  position: sticky;
+  z-index: 1;
+  width: 80px;
+}
+.social ul{
+padding: initial;
+
+}
+.social .fab{
+  font-size: 20px;
+}
+.social ul li{
+height: 40px;
+width:40px;
+padding-left: 4px;
+padding-top: 6px;
+list-style-type: none;
+color: #fff;
+background: #000;
+}
+
+.social ul li:hover{
+  padding-left: 30px;
+  width: 80px;
+}
+
+/*-------------RESUME CSS------------------*/
+
+.services{
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.services h1{
+  margin-bottom: 10px;
+}
+.services-box{
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.services-box .fas{
+  margin: 0px 20px;
+  font-size: 20px;
+}
+.services-box span{
+  margin: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.services-box p{
+  font-size: 15px;
+  margin-top: 20px;
+  color: #777;
+}
+.services-box:hover{
+  background-color: #000;
+  color: #fff;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.services-box p:hover{
+  color: #fff;
+}
+
+/*-------------Contact CSS------------------*/
+
+.contact{
+padding-top: 50px;
+  background: url(../images/background5.jpg);
+background-attachment: fixed;
+background-size: cover cover;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+.contact .row{
+  padding: 30px 0px;
+  font-size: 20px;
+}
+
+.contact .col-md-4 .fas, .fab{
+  padding: 10px;
+  font-size: 45px;
+}
+
+.contact .btn{
+  padding: 10px 20px 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.contact .btn:focus{
+  box-shadow: none !important;
+}
+.contact .btn:hover{
+  border: solid #000 !important;
+  background: #000 !important;
+}
+
+.footer{
+  background: #000;
+  color: #fff;
+  height: 50px;
+  margin-top: 50px;
+  padding-top: 10px;
+}
