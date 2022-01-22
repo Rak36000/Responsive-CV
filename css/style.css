@@ -55,14 +55,7 @@ background-size: cover cover;
   font-size: 10px;
 }
 
-.scroll-bar{
-  animation: mover 1s infinite alterenate;
-}
 
-@keyframes mover {
-  0%{transform: translateY(0);}
-  100%{transform: translateY(10px);}
-}
 
 /*-------------ABOUT CSS------------------*/
 
